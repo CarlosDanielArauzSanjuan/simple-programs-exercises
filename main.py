@@ -1,12 +1,18 @@
-#Escriba un programa que pida al usuario un entero de tres dígitos, y entregue el número con los dígitos en orden inverso:
+#Escriba un programa que reciba como entrada las longitudes de los dos catetos a y b
+# de un triángulo rectángulo, y que entregue como salida el largo de la hipotenusa c
+# del triangulo, dado por el teorema de Pitágoras: c2=a2+b2
+#.
 
-#Ingrese numero: 345
-#543
-#Ingrese numero: 241
-#142#
+#Ingrese cateto a: 7
+#Ingrese cateto b: 5
+#La hipotenusa es 8.6023252670426267
 
-num = input("Enter a 3 digits number:")
-invnum = num[::-1] #
-print (f""" 
-       the inverted number is {invnum}
-       """)
+import math # call math fuction
+
+catA =float (input("Enter side A :"))
+catB =float (input("Enter side B :"))
+hyp = math.sqrt((catA**2)+(catB**2)) # math.sqrt to calculate square root 
+
+print(f""" 
+    The hypotenuse is :{hyp}
+""")
